@@ -321,7 +321,14 @@ u-margin-bottom-big {
     ),
     url(../img/mountain.jpg);
   background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
 }
+
+.section-features > * {
+  transform: skewY(7deg);
+}
+
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
