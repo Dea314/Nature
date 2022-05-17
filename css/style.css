@@ -80,7 +80,7 @@ body {
 }
 .heading-primary--sub {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.8rem;
   animation: moveInRight 1s ease-out;
@@ -322,7 +322,6 @@ u-margin-bottom-big {
     url(../img/mountain.jpg);
   background-size: cover;
 }
-
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
@@ -330,11 +329,17 @@ u-margin-bottom-big {
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
 }
-.feature-box__icon {
-  width: 50px;
+.feature-box:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+
+.feature-box-icon {
+  font-size: 6rem;
   margin-bottom: 0.5rem;
-  color: linear-gradient(
+  display: inline-block;
+  background-image: linear-gradient(
     to right,
     rgba(61, 207, 151, 0.7),
     rgba(40, 112, 180, 0.7)
