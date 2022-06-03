@@ -399,7 +399,16 @@ u-margin-bottom-big {
 .card__side--back-1 {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
 }
-
+.card__side--back-2 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(61, 207, 151, 0.7),
+    rgba(40, 112, 180, 0.7)
+  );
+}
+.card__side--back-3 {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+}
 /* FRONT SIDE STYLING */
 .card__picture {
   background-size: cover;
@@ -414,10 +423,16 @@ u-margin-bottom-big {
     url(../img/nat-1.jpg);
 }
 .card__picture--2 {
-  background-image: url(../img/nat-2.jpg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(61, 207, 151, 0.7),
+      rgba(40, 112, 180, 0.7)
+    ),
+    url(../img/nat-2.jpg);
 }
 .card__picture--3 {
-  background-image: url(../img/nat-3.jpg);
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
+    url(../img/nat-3.jpg);
 }
 .card__heading {
   font-size: 2.8rem;
@@ -428,16 +443,26 @@ u-margin-bottom-big {
   position: absolute;
   top: 12rem;
   right: 2rem;
-  width: 75%;
+  width: 70%;
 }
 
 .card__heading-span {
-  padding: 1rem 1.5rem;
+  padding: 1rem 2.5rem;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
 .card__heading-span--1 {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+.card__heading-span--2 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(61, 207, 151, 0.7),
+    rgba(40, 112, 180, 0.7)
+  );
+}
+.card__heading-span--3 {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
 }
 
 .card__details {
@@ -455,4 +480,27 @@ li {
 }
 li:not(:last-child) {
   border-bottom: 1px solid #eee;
+}
+
+/* BACK SIDE STYLING */
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+.card__price-box {
+  margin-bottom: 8rem;
+  text-align: center;
+  color: #eee;
+}
+.card__price-now {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.card__price-value {
+  font-size: 6rem;
+  font-weight: 100;
 }
