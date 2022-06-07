@@ -445,7 +445,7 @@ u-margin-bottom-big {
 }
 .card__heading {
   font-size: 2.8rem;
-  font-weight: 300;
+  font-weight: 370;
   text-transform: uppercase;
   text-align: right;
   color: #fff;
@@ -461,7 +461,11 @@ u-margin-bottom-big {
   box-decoration-break: clone;
 }
 .card__heading-span--1 {
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 187, 0, 0.7),
+    rgba(255, 120, 48, 0.7)
+  );
 }
 .card__heading-span--2 {
   background-image: linear-gradient(
@@ -471,7 +475,11 @@ u-margin-bottom-big {
   );
 }
 .card__heading-span--3 {
-  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(41, 152, 255, 0.7),
+    rgba(85, 67, 250, 0.7)
+  );
 }
 
 .card__details {
@@ -506,10 +514,10 @@ li:not(:last-child) {
   color: #eee;
 }
 .card__price-now {
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   text-transform: uppercase;
 }
 .card__price-value {
   font-size: 6rem;
-  font-weight: 100;
+  font-weight: 350;
 }
