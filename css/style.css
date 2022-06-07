@@ -419,8 +419,13 @@ u-margin-bottom-big {
 }
 
 .card__picture--1 {
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
-    url(../img/nat-1.jpg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 187, 0, 0.7),
+      rgba(255, 120, 48, 0.7)
+    ),
+    url(../img/hiking.jpg);
+  background-position: center;
 }
 .card__picture--2 {
   background-image: linear-gradient(
@@ -428,11 +433,15 @@ u-margin-bottom-big {
       rgba(61, 207, 151, 0.7),
       rgba(40, 112, 180, 0.7)
     ),
-    url(../img/nat-2.jpg);
+    url(../img/forest.jpg);
 }
 .card__picture--3 {
-  background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
-    url(../img/nat-3.jpg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(41, 152, 255, 0.7),
+      rgba(85, 67, 250, 0.7)
+    ),
+    url(../img/sea.jpg);
 }
 .card__heading {
   font-size: 2.8rem;
@@ -443,7 +452,7 @@ u-margin-bottom-big {
   position: absolute;
   top: 12rem;
   right: 2rem;
-  width: 70%;
+  width: 50%;
 }
 
 .card__heading-span {
